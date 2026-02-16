@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arcadia Summit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="logo" href="#hero">Arcadia Summit</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" data-collapsible>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#signup">Signup</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero-content">
+            <p class="eyebrow">October 12-13, 2025 · Portland, OR</p>
+            <h1>
+              Arcadia Summit, a two-day editorial retreat for product leaders
+            </h1>
+            <p class="lead">
+              Two days of studio sessions, live critique, and strategy labs for
+              teams shaping the next generation of digital experiences.
+            </p>
+            <div class="hero-carousel" data-hero-carousel>
+              <div class="carousel-track">
+                <article class="carousel-item is-active">
+                  <p class="carousel-text">
+                    "The most editorially curated event on my calendar."
+                  </p>
+                  <p class="carousel-meta">- Lina Ro, Brand Director</p>
+                </article>
+                <article class="carousel-item">
+                  <p class="carousel-text">
+                    "We left with a sharper story and a cleaner launch plan."
+                  </p>
+                  <p class="carousel-meta">- Mateo S., Product Lead</p>
+                </article>
+                <article class="carousel-item">
+                  <p class="carousel-text">
+                    "A rare blend of craft, strategy, and calm."
+                  </p>
+                  <p class="carousel-meta">- Nina Patel, Founder</p>
+                </article>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" data-carousel-dir="prev" aria-label="Previous quote">
+                  Prev
+                </button>
+                <button class="carousel-btn" data-carousel-dir="next" aria-label="Next quote">
+                  Next
+                </button>
+              </div>
+            </div>
+            <div class="cta-row">
+              <a class="btn primary" href="#pricing">Reserve a seat</a>
+              <a class="btn ghost" href="#features">See the program</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <p class="meta-label">Track</p>
+                <p class="meta-value">Design, Story, Revenue</p>
+              </div>
+              <div>
+                <p class="meta-label">Seats</p>
+                <p class="meta-value">240 curated attendees</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="card-title">Highlights</p>
+            <ul>
+              <li>Morning salons with editors and founders</li>
+              <li>Afternoon labs on narrative positioning</li>
+              <li>Evening sessions with local artisans</li>
+            </ul>
+            <p class="card-note">Dress: modern studio casual.</p>
+          </div>
+        </section>
+
+        <section id="features" class="features">
+          <header>
+            <p class="eyebrow">Why attend</p>
+            <h2>Designed for teams who ship with taste and speed</h2>
+            <p class="section-lead">
+              Each track blends editorial storytelling with product craft, so
+              your next launch reads like a headline.
+            </p>
+          </header>
+          <div class="feature-grid">
+            <article class="feature">
+              <h3>Editorial playbooks</h3>
+              <p>
+                Build a reusable narrative system for releases, internal
+                briefings, and press.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Studio feedback</h3>
+              <p>
+                Bring your roadmap. Leave with a refined sequence and a renewed
+                story.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Revenue alignment</h3>
+              <p>
+                Translate creative direction into pricing, packaging, and sales
+                narratives.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+          <header>
+            <p class="eyebrow">Pricing</p>
+            <h2>Flexible seats for teams and solo builders</h2>
+            <p class="section-lead">
+              Select monthly or annual pricing for access to salons, labs, and
+              recordings.
+            </p>
+          </header>
+          <div class="pricing-toggle" role="group" aria-label="Pricing toggle">
+            <button class="toggle-btn is-active" data-plan="monthly">
+              Monthly
+            </button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <div class="pricing-grid">
+            <article class="tier">
+              <h3>Studio Pass</h3>
+              <p class="tier-price" data-price data-monthly="$420" data-yearly="$3,800">
+                $420
+              </p>
+              <ul>
+                <li>Two-day summit access</li>
+                <li>Salon recordings</li>
+                <li>Partner offers</li>
+              </ul>
+              <a class="btn primary" href="#signup">Choose Studio</a>
+            </article>
+            <article class="tier highlight">
+              <p class="tier-tag">Most popular</p>
+              <h3>Editorial Suite</h3>
+              <p class="tier-price" data-price data-monthly="$780" data-yearly="$6,900">
+                $780
+              </p>
+              <ul>
+                <li>Everything in Studio</li>
+                <li>Private critique session</li>
+                <li>Team storytelling kit</li>
+              </ul>
+              <a class="btn primary" href="#signup">Choose Suite</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="faq" class="faq">
+          <header>
+            <p class="eyebrow">FAQ</p>
+            <h2>Answers from our editorial desk</h2>
+            <p class="section-lead">We keep answers short, one at a time.</p>
+          </header>
+          <div class="accordion" data-accordion>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+                Who is this for?
+              </button>
+              <div id="faq-1" class="accordion-panel" hidden>
+                Product leaders, founders, and design teams looking to sharpen a
+                narrative-led launch for our 2024 summit.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+                What should I bring?
+              </button>
+              <div id="faq-2" class="accordion-panel" hidden>
+                Your current roadmap, a launch you want to refine, and a team
+                member to partner with in labs.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+                Can I transfer my pass?
+              </button>
+              <div id="faq-3" class="accordion-panel" hidden>
+                Yes. Seat transfers are available up to two weeks before the
+                summit.
+              </div>
+            </div>
+          </div>
+          <a class="btn secondary" href="mailto:hello@arcadiasummit.com">
+            Request the info kit
+          </a>
+        </section>
+
+        <section id="signup" class="signup">
+          <header>
+            <p class="eyebrow">Signup</p>
+            <h2>Join the advance list</h2>
+            <p class="section-lead">
+              Receive speaker announcements and schedule previews.
+            </p>
+          </header>
+          <form id="signup-form" class="signup-form">
+            <label>
+              Work email
+              <input type="email" name="email" placeholder="you@studio.com" required />
+            </label>
+            <label>
+              Team size
+              <select name="team">
+                <option>1-3</option>
+                <option>4-10</option>
+                <option>11-25</option>
+                <option>26+</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Join the list</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Arcadia Summit is an editorial experience by Studio Meridian.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
