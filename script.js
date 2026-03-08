@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : "Please check your details and try again.";
       }
     });
-   }
+  }
 
   initHeroCarousel();
 });
