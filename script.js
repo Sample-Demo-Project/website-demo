@@ -68,6 +68,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const signupForm = document.getElementById("signup-form");
+  const submitButton = document.getElementById("submitButton");
+  if (submitButton) {
+    submitButton.addEventListener("click", (event) => {
+      const workEmail = document.getElementById("workemail");
+      const email = workEmail ? String(workEmail.value || "").trim() : "";
+      // basic email validation: must contain '@' and '.' and not be empty
+      if (!email || email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+        console.log(email);
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+      }
+    });
+  }
   if (signupForm) {
     signupForm.addEventListener("submit", (event) => {
       event.preventDefault();
