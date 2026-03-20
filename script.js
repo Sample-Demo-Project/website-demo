@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   pricingButtons.forEach((button) => {
     button.addEventListener("click", () => {
       if (button.dataset.plan === "yearly") {
+        setPlan("yearly");
         return;
       }
       setPlan(button.dataset.plan);
