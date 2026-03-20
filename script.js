@@ -50,9 +50,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const panelId = trigger.getAttribute("aria-controls");
       const panel = panelId ? document.getElementById(panelId) : null;
 
-      trigger.setAttribute("aria-expanded", "false");
+      const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+      const newExpanded = !isExpanded;
+
+      // If opening this panel, close all others first
+      if (newExpanded) {
+        triggers.forEach((t) => {
+          if (t !== trigger) {
+            t.setAttribute("aria-expanded", "false");
+            const otherId = t.getAttribute("aria-controls");
+            const otherPanel = otherId ? document.getElementById(otherId) : null;
+            if (otherPanel) otherPanel.hidden = true;
+          }
+        });
+      }
+
+      trigger.setAttribute("aria-expanded", String(newExpanded));
       if (panel) {
-        panel.hidden = true;
+        panel.hidden = !newExpanded;
       }
     };
 
